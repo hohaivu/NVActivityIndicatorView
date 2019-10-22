@@ -29,7 +29,7 @@ import UIKit
 
 class NVActivityIndicatorAnimationBallScaleMultiple: NVActivityIndicatorAnimationDelegate {
     func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
-        let duration: CFTimeInterval = 2
+        let duration: CFTimeInterval = 3
         let beginTime = CACurrentMediaTime()
         let beginTimes = [0, 0.2, 0.4]
 
@@ -47,7 +47,7 @@ class NVActivityIndicatorAnimationBallScaleMultiple: NVActivityIndicatorAnimatio
         opacityAnimation.keyTimes = [0, 0.05, 1]
         opacityAnimation.values = [0, 1, 0]
 
-        // Animation
+        // Animations
         let animation = CAAnimationGroup()
 
         animation.animations = [scaleAnimation, opacityAnimation]
